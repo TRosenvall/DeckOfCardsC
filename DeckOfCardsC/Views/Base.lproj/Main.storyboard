@@ -1,11 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YJ7-9i-ZSW">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="RCX-Id-Yt6">
+            <objects>
+                <viewController id="YJ7-9i-ZSW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lz6-hK-xd7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8VO-HJ-wtU">
+                                <rect key="frame" x="41.5" y="162" width="331" height="572"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qb0-AE-mMD">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="464"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="qb0-AE-mMD" secondAttribute="height" multiplier="2.5:3.5" id="Sxk-8l-brg"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sC2-Be-n6x">
+                                        <rect key="frame" x="0.0" y="474" width="331" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="gxy-AF-wl8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXv-Gf-gwc">
+                                        <rect key="frame" x="0.0" y="528" width="331" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="rAn-gl-L9w"/>
+                                        </constraints>
+                                        <state key="normal" title="Choose New Card"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8VO-HJ-wtU" firstAttribute="centerX" secondItem="lz6-hK-xd7" secondAttribute="centerX" id="9sU-jn-Mnd"/>
+                            <constraint firstItem="8VO-HJ-wtU" firstAttribute="centerY" secondItem="lz6-hK-xd7" secondAttribute="centerY" id="qPG-PS-YB0"/>
+                            <constraint firstItem="8VO-HJ-wtU" firstAttribute="width" secondItem="lz6-hK-xd7" secondAttribute="width" multiplier="0.8" id="z0a-k0-9ef"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3he-Zk-cDy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2lm-Vx-0RR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="78" y="135"/>
+        </scene>
+    </scenes>
 </document>
