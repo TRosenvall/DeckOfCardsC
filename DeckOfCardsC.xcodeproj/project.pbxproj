@@ -12,6 +12,7 @@
 		8570605722CBEA730038243F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8570605622CBEA730038243F /* Assets.xcassets */; };
 		8570605A22CBEA730038243F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8570605822CBEA730038243F /* LaunchScreen.storyboard */; };
 		8570605D22CBEA730038243F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8570605C22CBEA730038243F /* main.m */; };
+		8570606C22CBEE150038243F /* DVMCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8570606B22CBEE150038243F /* DVMCard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,8 @@
 		8570605922CBEA730038243F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8570605B22CBEA730038243F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8570605C22CBEA730038243F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8570606A22CBEE150038243F /* DVMCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMCard.h; sourceTree = "<group>"; };
+		8570606B22CBEE150038243F /* DVMCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMCard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 		8570606922CBEB640038243F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8570606A22CBEE150038243F /* DVMCard.h */,
+				8570606B22CBEE150038243F /* DVMCard.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,6 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8570606C22CBEE150038243F /* DVMCard.m in Sources */,
 				8570605D22CBEA730038243F /* main.m in Sources */,
 				8570604F22CBEA710038243F /* AppDelegate.m in Sources */,
 			);
@@ -329,7 +335,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YY8J3FPYX8;
-				INFOPLIST_FILE = DeckOfCardsC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfCardsC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,7 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YY8J3FPYX8;
-				INFOPLIST_FILE = DeckOfCardsC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfCardsC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
