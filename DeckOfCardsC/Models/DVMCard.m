@@ -24,22 +24,24 @@
 
 @implementation DVMCard (JSONConvertable)
 
-- (instancetype)initWithDictionary:(NSDictionary<NSString *,id> *)topLevelDictionary
+- (NSMutableArray<DVMCard *>*)fetchFromDictionary:(NSDictionary<NSString *, id> *)topLevelDictionary;
 {
-    NSArray *cardsDictionary = topLevelDictionary[@"cards"];
-    if (![cardsDictionary isKindOfClass:[NSArray class]]) {
+    NSMutableArray<DVMCard*> *drawnCards = [NSMutableArray<DVMCard*> new];
+    NSArray *cardsArray = topLevelDictionary[@"cards"];
+    if (![cardsArray isKindOfClass:[NSArray class]]) {
         return nil;
     }
-    NSMutableArray<NSString *> *card = [NSMutableArray new];
-    // let abilities : [String] = []
-    for (NSDictionary *dictionary in card)
+    for (NSDictionary *dictionary in cardsArray)
     {
         NSString *suitName = dictionary[@"image"];
         NSString *imagePath = dictionary[@"suit"];
         
-        return [self initWithSuit:suitName imagePath:imagePath];
+        DVMCard *card = [[DVMCard alloc] initWithSuit:suitName imagePath:imagePath];
+        
+        [drawnCards addObject:card];
     }
-    return nil;
+
+    return drawnCards;
 }
 
 @end

@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DVMCard (JSONConvertable)
 
-- (instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)topLevelDictionary;
+- (NSMutableArray<DVMCard *>*)fetchFromDictionary:(NSDictionary<NSString *, id> *)topLevelDictionary;
 
 @end
 
