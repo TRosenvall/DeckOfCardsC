@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Card View Controller-->
         <scene sceneID="RCX-Id-Yt6">
             <objects>
-                <viewController id="YJ7-9i-ZSW" sceneMemberID="viewController">
+                <viewController id="YJ7-9i-ZSW" customClass="CardViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lz6-hK-xd7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,6 +42,9 @@
                                             <constraint firstAttribute="height" constant="44" id="rAn-gl-L9w"/>
                                         </constraints>
                                         <state key="normal" title="Choose New Card"/>
+                                        <connections>
+                                            <action selector="ChooseNewCardButtonTapped:" destination="YJ7-9i-ZSW" eventType="touchUpInside" id="Tca-d8-NnV"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -54,6 +57,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3he-Zk-cDy"/>
                     </view>
+                    <connections>
+                        <outlet property="cardImageView" destination="qb0-AE-mMD" id="Pkq-dn-F5r"/>
+                        <outlet property="cardSuitLabel" destination="sC2-Be-n6x" id="0SA-7c-kSO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2lm-Vx-0RR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

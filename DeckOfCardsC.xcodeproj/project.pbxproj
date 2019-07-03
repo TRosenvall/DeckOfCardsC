@@ -14,6 +14,7 @@
 		8570605D22CBEA730038243F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8570605C22CBEA730038243F /* main.m */; };
 		8570606C22CBEE150038243F /* DVMCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8570606B22CBEE150038243F /* DVMCard.m */; };
 		8570606F22CBF4F00038243F /* DVMCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8570606E22CBF4F00038243F /* DVMCardController.m */; };
+		8570607222CC04FD0038243F /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8570607122CC04FD0038243F /* CardViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		8570606B22CBEE150038243F /* DVMCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMCard.m; sourceTree = "<group>"; };
 		8570606D22CBF4F00038243F /* DVMCardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMCardController.h; sourceTree = "<group>"; };
 		8570606E22CBF4F00038243F /* DVMCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMCardController.m; sourceTree = "<group>"; };
+		8570607022CC04FD0038243F /* CardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
+		8570607122CC04FD0038243F /* CardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,8 @@
 		8570606722CBEB560038243F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8570607022CC04FD0038243F /* CardViewController.h */,
+				8570607122CC04FD0038243F /* CardViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8570607222CC04FD0038243F /* CardViewController.m in Sources */,
 				8570606C22CBEE150038243F /* DVMCard.m in Sources */,
 				8570605D22CBEA730038243F /* main.m in Sources */,
 				8570604F22CBEA710038243F /* AppDelegate.m in Sources */,

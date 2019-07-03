@@ -33,8 +33,8 @@
     }
     for (NSDictionary *dictionary in cardsArray)
     {
-        NSString *suitName = dictionary[@"image"];
-        NSString *imagePath = dictionary[@"suit"];
+        NSString *suitName = dictionary[@"suit"];
+        NSString *imagePath = dictionary[@"image"];
         
         DVMCard *card = [[DVMCard alloc] initWithSuit:suitName imagePath:imagePath];
         

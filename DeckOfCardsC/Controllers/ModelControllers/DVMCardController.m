@@ -9,7 +9,7 @@
 #import "DVMCardController.h"
 #import <UIKit/UIKit.h>
 
-static NSString * const baseURLString = @"https://deckofcardsapi.com/api/deck/new/draw";
+static NSString * const baseURLString = @"https://deckofcardsapi.com/api/deck/new/draw/";
 
 @implementation DVMCardController
 
@@ -26,7 +26,15 @@ static NSString * const baseURLString = @"https://deckofcardsapi.com/api/deck/ne
 {
     NSString *cardCount = [@(numberOfCards) stringValue];
     NSURL *baseURL = [NSURL URLWithString:baseURLString];
-    NSURL *finalURL = [baseURL URLByAppendingPathComponent:cardCount];
+    NSURLQueryItem *searchQuery = [NSURLQueryItem queryItemWithName:@"count" value:cardCount];
+    NSURLComponents *components = [[NSURLComponents alloc] initWithURL:baseURL resolvingAgainstBaseURL:true];
+    
+    
+    NSArray<NSURLQueryItem*> *queryItems = [[NSArray<NSURLQueryItem*> alloc] initWithObjects:searchQuery, nil];
+    
+    
+    components.queryItems = queryItems;
+    NSURL *finalURL = components.URL;
     
     [[[NSURLSession sharedSession] dataTaskWithURL:finalURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
